@@ -364,5 +364,100 @@
                 </table>
             </div>
         </section>
+        <br>
+        <section id="table">
+            <h2 style="display: inline;">HTML Table</h2>
+            <h3 style="display: inline;"><a href="#http">(top)</a></h3>
+            <div>
+                <br>
+                <table border="2">
+                    <tr>
+                        <th>Description</th>
+                        <th>Markup</th>
+                        <th>Example</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>Table</td>
+                        <td><code>&lt;table&gt;&lt;/table&gt;</code></td>
+                        <td rowspan="3">
+                            <code>
+                                &lt;table border=&quot;1&quot;&gt;<br>
+                                &lt;tr&gt;<br>&lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>&lt;td&gt;Row 1, Column 2&lt;/td&gt;<br>&lt;/tr&gt;<br>
+                                &lt;tr&gt;<br>&lt;td&gt;Row 2, Column 1&lt;/td&gt;<br>&lt;td&gt;Row 2, Column 2&lt;/td&gt;<br>&lt;/tr&gt;<br>
+                                &lt;/table&gt;
+                            </code>
+                        </td>
+                        <td rowspan="3">
+                            <table border="2">
+                                <tr>
+                                    <td>Row 1, Column 1</td>
+                                    <td>Row 1, Column 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Row 2, Column 1</td>
+                                    <td>Row 2, Column 2</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Table Row</td>
+                        <td><code>&lt;tr&gt;&lt;/tr&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Table Data</td>
+                        <td><code>&lt;td&gt;&lt;/td&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Table Head</td>
+                        <td><code>&lt;th&gt;&lt;/th&gt;</code></td>
+                        <td rowspan="3">
+                            <code>
+                                &lt;table border ="1"&gt;<br>
+                                &lt;thead&gt;<br>
+                                &lt;tr&gt;<br>&lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>&lt;td&gt;Row 1, Column 2&lt;/td&gt;<br>&lt;/tr&gt;<br>
+                                &lt;/thead&gt;<br>
+                                &lt;tbody&gt;<br>
+                                &lt;tr&gt;<br>&lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>&lt;td&gt;Row 1, Column 2&lt;/td&gt;<br>&lt;/tr&gt;<br>
+                                &lt;tr&gt;<br>&lt;td&gt;Row 2, Column 1&lt;/td&gt;<br>&lt;td&gt;Row 2, Column 2&lt;/td&gt;<br>&lt;/tr&gt;<br>
+                                &lt;/tbody&gt;<br>
+                                &lt;tfoor&gt;<br>
+                                &lt;tr&gt;<br>&lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>&lt;td&gt;Row 1, Column 2&lt;/td&gt;<br>&lt;/tr&gt;<br>
+                                &lt;/tfoot&gt;<br>
+                                &lt;table&gt;<br>
+                            </code>
+                        <td rowspan="3">
+                            <table border="1">
+                                <thead>
+                                    <tr>
+                                        <th>Column 1</th>
+                                        <th>Column 2</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Row 1 Column 1</td><td>Row 1 Column 2</td></tr>
+                                    <tr><td>Row 2 Column 1</td><td>Row 2 Column 2</td></tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Column 1 Footer</td>
+                                        <td>Column 2 Footer</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Table Body</td>
+                        <td><code>&lt;tbody&gt;&lt;/tbody&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Table Footer</td>
+                        <td><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
     </body>
 </html>
