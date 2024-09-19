@@ -203,7 +203,7 @@
             </div>
         </section>
         <br>
-        <section id="formatting"></section>
+        <section id="formatting">
             <h2 style="display: inline;">HTML Formatting</h2>
             <h3 style="display: inline;"><a href="#http">(top)</a></h3>
             <div>
@@ -282,6 +282,83 @@
                                 </code>
                             </td>
                             <td>This is a <sup>supersubscripted</sup> text.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <br>
+        <section id="media">
+            <h2 style="display: inline;">HTML Media</h2>
+            <h3 style="display: inline;"><a href="#http">(top)</a></h3>
+            <div>
+                <br>
+                <table border="2">
+                    <thead>
+                        <th>Description</th>
+                        <th>Markup</th>
+                        <th>Output</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Image</td>
+                            <td>
+                                <code>
+                                    &lt;img src="source.jpg" atl alternate="alternate text"&gt;
+                                </code>
+                            </td>
+                            <td>
+                                <img src="https://picsum.photos/320/240" alt="mountains">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Video</td>
+                            <td>
+                                <code>
+                                    &lt;video width="320" height="240" controls&gt;<br>
+                                    &nbsp;&nbsp;&lt;source src="source.mp4" type="video/mp4"&gt;<br>
+                                    &nbsp;&nbsp;&lt;source src="source.ogg" type="video/ogg"&gt;<br>
+                                    &nbsp;&nbsp;Your browser does not support the video tag.<br>
+                                    &lt;/video&gt;
+                                </code>
+                            </td>
+                            <td>
+                                <video width="320" height="240" controls>
+                                    <source src=" https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                                    <source src=" https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.ogg" type="video/ogg">
+                                    Your browser does not suppoer the video tag.
+                                </video>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Audio</td>
+                            <td>
+                                <code>
+                                    &lt;audio controls&gt;<br>
+                                    &nbsp;&nbsp;&lt;source src="source.ogg" type="audio/ogg"&gt;<br>
+                                    &nbsp;&nbsp;&lt;source src="source.mp4" type="audio/mp3"&gt;<br>
+                                    &nbsp;&nbsp;Your browser does not support the audio element.<br>
+                                    &lt;/audio&gt;
+                                </code>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov" type="audio/ogg">
+                                    <source src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov" type="audio/mp3">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Iframe</td>
+                            <td>
+                                <code>
+                                   &lt;iframe src="url"&gt;&lt;/iframe"&gt;
+                                </code>
+                            </td>
+                            <td>
+                                <iframe src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGRGfdqqK0&#x2F;a4g7Fq1ZCb-A6DrYhHa-rQ&#x2F;view?embed"></iframe>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
