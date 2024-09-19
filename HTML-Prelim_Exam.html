@@ -379,7 +379,11 @@
                     </tr>
                     <tr>
                         <td>Table</td>
-                        <td><code>&lt;table&gt;&lt;/table&gt;</code></td>
+                        <td>
+                            <code>
+                                &lt;table&gt;&lt;/table&gt;
+                            </code>
+                        </td>
                         <td rowspan="3">
                             <code>
                                 &lt;table border=&quot;1&quot;&gt;<br>
@@ -403,15 +407,27 @@
                     </tr>
                     <tr>
                         <td>Table Row</td>
-                        <td><code>&lt;tr&gt;&lt;/tr&gt;</code></td>
+                        <td>
+                            <code>
+                                &lt;tr&gt;&lt;/tr&gt;
+                            </code>
+                        </td>
                     </tr>
                     <tr>
                         <td>Table Data</td>
-                        <td><code>&lt;td&gt;&lt;/td&gt;</code></td>
+                        <td>
+                            <code>
+                                &lt;td&gt;&lt;/td&gt;
+                            </code>
+                        </td>
                     </tr>
                     <tr>
                         <td>Table Head</td>
-                        <td><code>&lt;th&gt;&lt;/th&gt;</code></td>
+                        <td>
+                            <code>
+                                &lt;th&gt;&lt;/th&gt;
+                            </code>
+                        </td>
                         <td rowspan="3">
                             <code>
                                 &lt;table border ="1"&gt;<br>
@@ -428,7 +444,7 @@
                                 &lt;table&gt;<br>
                             </code>
                         <td rowspan="3">
-                            <table border="1">
+                            <table border="2">
                                 <thead>
                                     <tr>
                                         <th>Column 1</th>
@@ -436,8 +452,12 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td>Row 1 Column 1</td><td>Row 1 Column 2</td></tr>
-                                    <tr><td>Row 2 Column 1</td><td>Row 2 Column 2</td></tr>
+                                    <tr>
+                                        <td>Row 1 Column 1</td><td>Row 1 Column 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Row 2 Column 1</td><td>Row 2 Column 2</td>
+                                    </tr>
                                 </tbody>
                                 <tfoot>
                                     <tr>
@@ -450,14 +470,142 @@
                     </tr>
                     <tr>
                         <td>Table Body</td>
-                        <td><code>&lt;tbody&gt;&lt;/tbody&gt;</code></td>
+                        <td>
+                            <code>
+                                &lt;tbody&gt;&lt;/tbody&gt;
+                            </code>
+                        </td>
                     </tr>
                     <tr>
                         <td>Table Footer</td>
-                        <td><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code></td>
+                        <td>
+                            <code>
+                                &lt;tfoot&gt;&lt;/tfoot&gt;
+                            </code>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <br>
+        <section id="form">
+            <h2 style="display: inline;">HTML Form Elements</h2>
+            <h3 style="display: inline;"><a href="#http">(top)</a></h3>
+            <div>
+                <br>
+                <table border="2">
+                    <tr>
+                        <th>Description</th>
+                        <th>Markup</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>Label</td>
+                        <td>
+                            <code>
+                                &lt;label for="input-id"&gt;Label&lt;/label&gt;
+                            </code>
+                        </td>
+                        <td><label for="input-id">Label:</label></td>
+                    </tr>
+                    <tr>
+                        <td>Input - Textbox</td>
+                        <td>
+                            <code>
+                                &lt;input type="text" name="name"&gt;
+                            </code>
+                        </td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Input - Number</td>
+                        <td>
+                            <code>
+                                &lt;input type="number" name="name"&gt;
+                            </code>
+                        </td>
+                        <td><input type="number" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Input - Password</td>
+                        <td>
+                            <code>
+                                &lt;input type="password" name="name"&gt;
+                            </code>
+                        </td>
+                        <td><input type="number" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Input - Checkbox</td>
+                        <td>
+                            <code>
+                                &lt;input type="checkbox" name="name"&gt; Check me
+                            </code>
+                        </td>
+                        <td><input type="checkbox" name="name"> Check me</td>
+                    </tr>
+                    <tr>
+                        <td>Input - Radio</td>
+                        <td>
+                            <code>
+                                &lt;input type="radio" name="name"&gt; Option 1<br>&lt;input type="radio" name="name"&gt; Option 2
+                            </code>
+                        </td>
+                        <td>
+                            <input type="radio" name="name"> Option 1<br>
+                            <input type="radio" name="name"> Option 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Input - Submit</td>
+                        <td>
+                            <code>
+                                &lt;input type="submit" value="Submit"&gt;
+                            </code>
+                        </td>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                    <tr>
+                        <td>Input - Button</td>
+                        <td>
+                            <code>
+                                &lt;input type="button" value="Click Me"&gt;
+                            </code>
+                        </td>
+                        <td><input type="button" value="Click Me"></td>
+                    </tr>
+                    <tr>
+                        <td>Select</td>
+                        <td>
+                            <code>
+                                &lt;select name="dropdown"&gt;<br>
+                                &lt;option&gt;Option 1&lt;/option&gt;<br>
+                                &lt;option&gt;Option 2&lt;/option&gt;<br>
+                                &lt;/select&gt;
+                            </code>
+                        </td>
+                        <td>
+                            <select name="dropdown">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Textarea</td>
+                        <td>
+                            <code>
+                                &lt;textarea&gt;Textarea here&lt;/textarea&gt;
+                            </code>
+                        </td>
+                        <td><textarea>Textarea here</textarea></td>
                     </tr>
                 </table>
             </div>
         </section>
     </body>
+    <br>
+    <footer>
+        © 2024 Erine George Lumbad - BSIT 3A. All rights reserved.
+    </footer>
 </html>
