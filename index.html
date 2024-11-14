@@ -11,6 +11,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
         <title>PRIN135: HTML Cheat Sheet</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <header>
@@ -30,7 +32,7 @@
             </nav>
         </header>
         <div class="container">
-            <section id="headers">
+            <section id="headers" data-aos="fade-up" class="hidden show">
                 <h2 style="display: inline;" class="edit">HTML Headers</h2>
                 <div class="typo">
                     <br>
@@ -76,8 +78,8 @@
                 </div>
             </section>
             <br>
-            <section id="typography">
-                <h2 style="display: inline;" class="edit">HTML Typography</h2>
+            <section id="typography" data-aos="fade-up" class="hidden show">
+                <h2 style="display: inline;" class="edit" >HTML Typography</h2>
                 <div class="typo">
                     <br>
                     <table border>
@@ -209,7 +211,7 @@
                 </div>
             </section>
             <br>
-            <section id="formatting">
+            <section id="formatting" data-aos="fade-up" class="hidden show">
                 <h2 style="display: inline;" class="edit">HTML Formatting</h2>
                 <div class="typo">
                     <br>
@@ -293,7 +295,7 @@
                 </div>
             </section>
             <br>
-            <section id="media">
+            <section id="media" data-aos="fade-up" class="hidden show">
                 <h2 style="display: inline;" class="edit">HTML Media</h2>
                 <div class="typo">
                     <br>
@@ -369,7 +371,7 @@
                 </div>
             </section>
             <br>
-            <section id="table">
+            <section id="table" data-aos="fade-up" class="hidden show">
                 <h2 style="display: inline;" class="edit">HTML Table</h2>
                 <div class="typo">
                     <br>
@@ -491,7 +493,7 @@
                 </div>
             </section>
             <br>
-            <section id="forms">
+            <section id="forms" data-aos="fade-up" class="hidden show">
                 <h2 style="display: inline;" class="edit">HTML Form Elements</h2>
                 <div class="typo">
                     <br>
@@ -517,7 +519,7 @@
                                     &lt;input type="text" name="name"&gt;
                                 </code>
                             </td>
-                            <td><input type="text" name="name"></td>
+                            <td><input class="input" type="text" name="name"></td>
                         </tr>
                         <tr>
                             <td>Input - Number</td>
@@ -526,7 +528,7 @@
                                     &lt;input type="number" name="name"&gt;
                                 </code>
                             </td>
-                            <td><input type="number" name="name"></td>
+                            <td><input class="input" type="number" name="name"></td>
                         </tr>
                         <tr>
                             <td>Input - Password</td>
@@ -535,7 +537,7 @@
                                     &lt;input type="password" name="name"&gt;
                                 </code>
                             </td>
-                            <td><input type="number" name="name"></td>
+                            <td><input class="input" type="number" name="name"></td>
                         </tr>
                         <tr>
                             <td>Input - Checkbox</td>
@@ -606,5 +608,7 @@
                 </div>
             </section>
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init({duration: 1500});</script>
     </body>
 </html>

@@ -5,6 +5,7 @@
     font-size: 20;
     font-family: "Afacad Flux", sans-serif;
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 header {
@@ -15,6 +16,7 @@ header {
     /* padding: 3rem; */
     border-right: 1px solid black;
     top: 0;
+    z-index: 2;
 }
 
 header h1 {
@@ -52,6 +54,7 @@ section {
     height: 100%;
     width: 100%;
     padding-top: 3%;
+    cursor: pointer;
 }
 
 .nav a:hover {
@@ -81,6 +84,25 @@ footer {
 
 .edit {
     font-size: 300%;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 3s;
+}
+  
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+}
+  
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
 
 @media (max-width: 425px) {
@@ -144,4 +166,9 @@ footer {
     .container {
         margin-top: 350px;
     }
+
+    .input {
+        width: 100%;
+    }
+
 }
